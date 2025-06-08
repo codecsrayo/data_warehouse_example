@@ -44,8 +44,16 @@ PRINT 'Generación de metadatos completada'
 PRINT ''
 
 PRINT '==================================================================='
+PRINT 'PASO 7: Validar datos del Data Warehouse'
+PRINT '-------------------------------------------------------------------'
+:r 07_validacion_datos.sql
+PRINT 'Validación de datos completada'
+PRINT ''
+
+PRINT '==================================================================='
 PRINT 'IMPLEMENTACIÓN DEL DATA WAREHOUSE COMPLETADA EXITOSAMENTE'
 PRINT 'Fecha y hora de finalización: ' + CONVERT(VARCHAR, GETDATE(), 120)
 PRINT '==================================================================='
 
 -- Para ver la documentación completa, consulte el archivo documentacion_dw.md
+-- Para obtener más información sobre el proyecto, consulte el archivo README.md
